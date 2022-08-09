@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 const Contact = () => {
 	return (
-		<div name="contact" className="w-full h-screen bg-white dark:bg-[#0a192f] flex justify-center items-center p-4">
+		<div name="contact" className="w-full h-auto bg-white dark:bg-[#0a192f] flex justify-center items-center p-4">
 			<form
 				method="POST"
 				action="https://getform.io/f/f07994de-98f2-4f00-91b1-d2aec22d8ee8"
-				className="flex flex-col max-w-[800px] w-full bg-[#edf6f9] dark:bg-[#0a192f] px-8 py-8 sm:px-32 sm:py-8 sm:rounded-xl"
+				className="flex flex-col max-w-[1000px] w-full bg-[#edf6f9] dark:bg-[#0a192f] px-8 py-8 sm:px-32 sm:py-8 sm:rounded-xl"
 			>
 				<div className="pb-8">
 					<p className="text-4xl font-bold inline border-b-4 text-[#0a192f] dark:text-gray-300 border-[#83c5be] dark:border-pink-600">Contact</p>
@@ -17,7 +17,7 @@ const Contact = () => {
 				</div>
 				<input className="bg-[#0a192f] dark:bg-[#ccd6f6] text-white dark:text-black font-medium p-2" type="text" placeholder="Name" name="name" />
 				<input className="my-4 p-2 bg-[#0a192f] dark:bg-[#ccd6f6] text-white dark:text-black font-medium" type="email" placeholder="Email" name="email" />
-				<textarea className="bg-[#0a192f] dark:bg-[#ccd6f6] text-white dark:text-black font-medium p-2" name="message" rows="10" placeholder="Message"></textarea>
+				<textarea className="bg-[#0a192f] dark:bg-[#ccd6f6] text-white dark:text-black font-medium p-2 resize-none" name="message" rows="10" placeholder="Message"></textarea>
 				<motion.button
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.9 }}

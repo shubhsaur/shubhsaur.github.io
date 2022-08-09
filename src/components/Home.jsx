@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Home = () => {
 	return (
-		<div name="home" className="w-full h-screen bg-white dark:bg-[#0a192f]">
+		<div name="home" className="w-full h-screen bg-white dark:bg-[#0a192f] landscape:h-auto lg:landscape:h-screen landscape:pt-32 landscape:pb-16">
 			{/* container */}
 			<motion.div
 				initial={{ x: -300 }}

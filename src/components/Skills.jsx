@@ -14,7 +14,7 @@ import Splunk from "../assets/splunk.svg";
 
 const Skills = () => {
 	return (
-		<div name="skills" className="w-full h-screen bg-white dark:bg-[#0a192f] text-[#0a192f] dark:text-gray-300">
+		<div name="skills" className="w-full h-auto pt-16 bg-white dark:bg-[#0a192f] text-[#0a192f] dark:text-gray-300">
 			{/* container */}
 			<div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
 				<div>
@@ -58,30 +58,30 @@ const Skills = () => {
 						<p className="my-4">MongoDB</p>
 					</div>
 
-					{/* <div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-						<img className="w-20 mx-auto" src={Apigee} alt="html icon" />
-						<p className="my-4">Apigee</p>
+					<div className="bg-[#0a192f] grid text-white font-medium shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+						<img className="w-20 mx-auto self-center mt-8" src={Apigee} alt="html icon" />
+						<p className="my-4 self-center">Apigee</p>
 					</div>
 
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-						<img className="w-20 mx-auto h-[80px]" src={Jira} alt="html icon" />
+					<div className="bg-[#0a192f] text-white font-medium shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+						<img className="w-20 mx-auto h-[70px]" src={Jira} alt="html icon" />
 						<p className="my-4">JIRA</p>
 					</div>
 
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-						<img className="w-20 mx-auto h-[80px]" src={Git} alt="html icon" />
-						<p className="my-4">Git</p>
+					<div className="bg-[#0a192f] grid text-white font-medium shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+						<img className="w-20 mx-auto self-center mt-8" src={Git} alt="html icon" />
+						<p className="my-4 self-center">Git</p>
 					</div>
 
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<div className="bg-[#0a192f] text-white font-medium shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<img className="w-20 mx-auto h-[80px]" src={Splunk} alt="html icon" />
 						<p className="my-4">Splunk</p>
 					</div>
 
-					<div className="shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<div className="bg-[#0a192f] text-white font-medium shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<img className="w-20 mx-auto" src={Postman} alt="html icon" />
 						<p className="my-4">Postman</p>
-					</div> */}
+					</div>
 				</div>
 			</div>
 		</div>
