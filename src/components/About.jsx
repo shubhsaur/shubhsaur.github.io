@@ -1,5 +1,6 @@
 import React from "react";
 import Profile from "../assets/profile.jpg";
+import self from "../assets/self.png";
 
 const About = () => {
 	return (
@@ -12,8 +13,8 @@ const About = () => {
 					<div></div>
 				</div>
 				<div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
-					<div className="border-4 border-[#0a192f] ">
-						<img className="max-w-[100%]" src={Profile} alt="profile" />
+					<div className="">
+						<img className="max-w-[100%]" src={self} alt="profile" />
 					</div>
 					<div className="font-medium text-xl text-[#0a192f] dark:text-[#8892b0]">
 						<p>

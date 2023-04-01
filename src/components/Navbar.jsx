@@ -5,9 +5,14 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import MaterialUISwitch from "./MaterialUISwitch";
+import { useMenuAnimations } from "./useMenuAnimations";
+import { MenuToggle } from "./MenuToggle";
+import "./styles.css";
 
 const Navbar = ({onClick}) => {
 	const [nav, setNav] = useState(false);
+
+	const scope = useMenuAnimations(nav);
 
 	const handleClick = () => setNav(!nav);
 
@@ -77,18 +82,13 @@ const Navbar = ({onClick}) => {
 			</div>
 			{/* Hamburger */}
 
-			<div onClick={handleClick} className="md:hidden z-10">
+			{/* <div onClick={handleClick} className="md:hidden z-10">
 				{!nav ? <FaBars className="text-[#0a192f] dark:text-gray-300 text-2xl" /> : <FaTimes className="text-[#0a192f] dark:text-gray-300 text-2xl" />}
-			</div>
+			</div> */}
 			{/* Mobile menu */}
-
-			<ul
-				className={
-					!nav
-						? "hidden"
-						: "absolute top-0 left-0 w-full h-screen bg-white dark:bg-[#0a192f] flex flex-col justify-center items-center"
-				}
-			>
+			<div ref={scope} className="hidden mobile">
+			<nav className="menu bg-[#83c5be] dark:bg-pink-600 text-white ">
+			<ul>
 				<li className="py-6 text-4xl">
 					<li>
 						<Link
@@ -155,6 +155,10 @@ const Navbar = ({onClick}) => {
 					</li>
 				</li>
 			</ul>
+			
+			</nav>
+			<MenuToggle toggle={() => setNav(!nav)} />
+			</div>
 			{/* social icons */}
 			<div className="hidden lg:flex fixed flex-col top-[35%] left-0">
 				<ul>
